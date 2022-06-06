@@ -16,11 +16,10 @@
     <dependencies>
         <!-- Dependency for java ee -->
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>${javaee-api.version}</version>
-            <scope>provided</scope>
-        </dependency>
+			<groupId>jakarta.platform</groupId>
+			<artifactId>jakarta.jakartaee-web-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
         <!-- Dependency for JPA module -->
         <dependency>
             <groupId>com.baeldung.wildfly</groupId>
@@ -31,13 +30,11 @@
         <dependency>
             <groupId>com.baeldung.wildfly</groupId>
             <artifactId>wildfly-ejb-interfaces</artifactId>
-            <version>${wildlfy.version}</version>
         </dependency>
         <!-- Dependency for EJB interface module -->
         <dependency>
             <groupId>com.baeldung.wildfly</groupId>
             <artifactId>wildfly-ejb</artifactId>
-            <version>${wildlfy.version}</version>
         </dependency>
     </dependencies>
 

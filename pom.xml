@@ -25,18 +25,18 @@
             <!-- Dependencies for other libraries -->
             <!-- Dependency for java ee -->
             <dependency>
-                <groupId>javax</groupId>
-                <artifactId>javaee-api</artifactId>
-                <version>${javaee-api.version}</version>
+                <groupId>jakarta.platform</groupId>
+                <artifactId>jakarta.jakartaee-web-api</artifactId>
+                <version>${jakartaee-api.version}</version>
                 <scope>provided</scope>
             </dependency>
             <!-- Dependency for wildfly -->
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
-                <artifactId>wildfly-javaee7</artifactId>
-                <version>${wildfly-javaee7.version}</version>
-                <scope>import</scope>
+                <artifactId>wildfly-jakartaee8-with-tools</artifactId>
+                <version>${version.jboss.bom}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <!-- Dependency on Hibernate -->
             <dependency>
@@ -83,8 +83,10 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <javaee-api.version>7.0</javaee-api.version>
-        <wildfly-javaee7.version>13.0.0.Final</wildfly-javaee7.version>
+        <jakartaee-api.version>8.0.0</jakartaee-api.version>
+<!--         <javaee-api.version>7.0</javaee-api.version> -->
+<!--         <wildfly-javaee7.version>13.0.0.Final</wildfly-javaee7.version> -->
+        <version.jboss.bom>26.1.1.Final</version.jboss.bom>
         <hibernate-core.version>5.6.9.Final</hibernate-core.version>
         <wildlfy.version>0.0.1-SNAPSHOT</wildlfy.version>
     </properties>

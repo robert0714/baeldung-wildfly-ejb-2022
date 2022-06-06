@@ -23,10 +23,10 @@
         </dependency>
         <!-- Dependency for java ee -->
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
+			<groupId>jakarta.platform</groupId>
+			<artifactId>jakarta.jakartaee-web-api</artifactId> 
+			<scope>provided</scope>
+		</dependency>
         <!-- Dependency for JPA -->
         <dependency>
             <groupId>org.hibernate</groupId>
